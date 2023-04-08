@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/reset.css">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/font.css">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/lecture.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"rel="stylesheet">
+
+    <script>
+        window.addEventListener("load", function () {
+            // 글자 나오기
+            const emphasis = document.querySelectorAll(".emphasis");
+            const timer = document.querySelector("#hourglass");
+
+            for (let i = 0; i < emphasis.length; i++) {
+                window.setTimeout(function () {
+                    emphasis[i].style.transitionDuration = '1s';
+                    emphasis[i].style.opacity = "1";
+                }, 1000);
+            }
+
+
+            // 모래시계 움직이기
+            hourglass.addEventListener('mouseenter', (e) => {
+                e.preventDefault();
+                // hourglass.classList.add('move'); //.png 회전하는 방법
+                hourglass.src = "./img/new모래시계.gif";
+            });
+
+            hourglass.addEventListener('mouseleave', (e) => {
+                e.preventDefault();
+                // hourglass.classList.remove('move'); // .png 회전 제거
+                hourglass.src = "./img/모래시계.png";
+            });
+
+            $(window).scroll(function () {
+                console.log($(window).scrollTop());
+            });
+
+        });
+
+    </script>
+
+    <title>혜정이의 홈페이지</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 16px;
+            color: black;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        #container {
+            background-color: #f7f0e5;
+            height: 100vh;
+        }
+
+        #nav>ul {
+            margin: 0 auto;
+            padding: 15px 0;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+        }
+
+        #content>p {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 45px;
+            /* white-space: pre-wrap; */
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        p>.emphasis {
+            color: #e7b10a;
+            opacity: 0;
+        }
+
+        #hourglass {
+            width: 380px;
+            height: 360px;
+
+            /* 가운데 정렬 */
+            position: absolute;
+            top: 77%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* 4개를 사용하면 뿌옇게 보이는 버그가 생기는 것을 해결방법 */
+            /* transform:translate(calc(-50% + 0.5px), calc(-50% + 0.5px)); */
+        }
+
+        #container2 {
+            background-color: white;
+            height: 100vh;
+            /* 스크롤바 없애기 */
+            overflow: hidden;
+        }
+
+        #section1 {
+            display: flex;
+            margin: 0 auto;
+            padding-top: 50px;
+            width: 70%;
+            /* 이미지 이동 준비 */
+            /* transform: translate3d(400px, 0, 0); */
+        }
+
+        #section1>img {
+            width: 300px;
+            height: 270px;
+        }
+
+        section p {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        #section1>p {
+            margin: 85px 0px 0px 60px;
+        }
+
+        p>.emphasis2 {
+            color: #f96748;
+        }
+
+        #section2 {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 auto;
+            padding: 50px 0;
+            width: 70%;
+        }
+
+        #section2>#affinity>img {
+            width: 365px;
+            height: 250px;
+        }
+
+        #section2>p {
+            margin: 65px 50px 0px 0px;
+        }
+
+        #aboutme_btn {
+            width: 270px;
+            height: 50px;
+            margin-top: 35px;
+            margin-left: 50px;
+        }
+
+        #affinity {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <nav id="nav">
+            <ul>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <p>
+                안녕하세요.<br>
+                제 이름은 <span class="emphasis">박혜정</span> 입니다.<br>
+                끊임없는 자기계발과 경험을 통해<br>
+                전문성을 키우고 누구보다<br>
+                <span class="emphasis">뛰어난 개발자</span>가 되겠습니다.<br>
+            </p>
+
+            <img src="./img/모래시계.png" alt="모래시계" id="hourglass">
+        </div>
+    </div>
+    <div id="container2">
+        <section id="section1">
+            <img src="./img/끈기.png" alt="끈기">
+
+            <p>
+                어떤 목표가 생기면 결과가<br>
+                나타날 때까지 집중하고<br>
+                밀고 나가는 <span class="emphasis2">끈기</span>가 있으면,
+            </p>
+        </section>
+
+        <section id="section2">
+            <p>
+                <span class="emphasis2">예리</span>하고 <span class="emphasis2">공감</span>적으로<br>
+                <span class="emphasis2">경청</span>함으로써<br>
+                다름사람을 이해합니다.
+            </p>
+
+            <div id="affinity">
+                <img src="./img/친화력_색.png" alt="친화력">
+
+                <a href="#aboutme"><img src="./img/소개하겠습니다_BTN.png" alt="aboutme_btn" id="aboutme_btn"></a>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>

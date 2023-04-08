@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+#container {
+    background-color: #f7f0e5;
+    height: 100vh;
+}
+
+#nav>ul {
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+#content>p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    /* white-space: pre-wrap; */
+    text-align: center;
+    margin-top: 45px;
+}
+
+p>.emphasis {
+    color: #e7b10a;
+    opacity: 0;
+}
+
+#hourglass {
+    width: 380px;
+    height: 360px;
+
+    /* 가운데 정렬 */
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 4개를 사용하면 뿌옇게 보이는 버그가 생기는 것을 해결방법 */
+    /* transform:translate(calc(-50% + 0.5px), calc(-50% + 0.5px)); */
+}
+
+#container2 {
+    background-color: white;
+    height: 100vh;
+    /* 스크롤바 없애기 */
+    overflow: hidden;
+}
+
+#section1 {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 70%;
+    /* 이미지 이동 준비 */
+    /* transform: translate3d(400px, 0, 0); */
+}
+
+#section1>img {
+    width: 300px;
+    height: 270px;
+}
+
+section p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#section1>p {
+    margin: 85px 0px 0px 60px;
+}
+
+p>.emphasis2 {
+    color: #f96748;
+}
+
+#section2 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 70%;
+}
+
+#section2>#affinity>img {
+    width: 365px;
+    height: 250px;
+}
+
+#section2>p {
+    margin: 65px 50px 0px 0px;
+}
+
+#aboutme_btn {
+    width: 270px;
+    height: 50px;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+#affinity {
+    display: flex;
+    flex-direction: column;
+}
