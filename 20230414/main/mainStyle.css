@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+#container1 {
+    background-color: #f7f0e5;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#content1 {
+    width: 910px;
+    margin: 0 auto;
+}
+
+#nav>ul {
+    padding: 20px 0px 40px 0px;
+}
+
+#nav>ul>li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+#nav>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#container1>#content1>h1 {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h1>.emphasis {
+    color: #e7b10a;
+    opacity: 0;
+}
+
+#hourglass {
+    width: 380px;
+    height: 360px;
+    margin: -25px auto;
+}
+
+#container2 {
+    background-color: white;
+    height: 100vh;
+    /* 스크롤바 없애기 */
+    overflow: hidden;
+}
+
+#content2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#article1 {
+    margin: 20px 0 60px 0;
+}
+
+#article1>img {
+    float: left;
+    padding-left: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+#content2 p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+
+}
+
+#content2>#article1>p {
+    padding: 130px 0px 0px 400px;
+}
+
+p .emphasis2 {
+    color: #f96748;
+}
+
+#article1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#article2>p {
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 130px;
+}
+
+#article2>#imgBtnChain {
+    float: right;
+    padding-right: 30px;
+}
+
+#article2>#imgBtnChain>a {
+    display: block;
+    margin-left: 130px;
+    margin-top: 15px;
+}
+#article2>#imgBtnChain>a>img{
+    width: 298px;
+    height: 42px;
+}
+
+#article2>#imgBtnChain>img {
+    width: 430px;
+    height: 300px;
+}
+
+#article2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
