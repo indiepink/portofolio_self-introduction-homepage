@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/reset.css">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/font.css">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/lecture.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>혜정이의 홈페이지</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 16px;
+            color: black;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #container {
+            background: url("./images/background_portfolio.jpg");
+            height: 2160px;
+            overflow: hidden;
+        }
+
+        #content {
+            width: 1200px;
+            /* border: 5px solid red; */
+            margin: 0 auto;
+        }
+
+        #nav>ul {
+            padding: 20px 0px 40px 0px;
+        }
+
+        #nav>ul>li {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+        }
+
+        #nav>ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #content>h1 {
+            font-size: 50px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 77px;
+            margin-top: 130px;
+            padding-left: 30px;
+        }
+
+        #content>#bar>ul {
+            /* margin: 340px 0px; */
+            padding: 340px 30px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid rgb(223, 223, 223);
+
+        }
+
+        #content>#bar>ul {
+            font-size: 20px;
+        }
+
+        #content>#bar>ul>#home_bar>li {
+            float: left;
+        }
+
+        #content>#bar>ul>#home_bar>li:nth-child(2) {
+            margin-left: 20px;
+            color: rgb(223, 223, 223);
+        }
+
+        #content>#bar>ul>#por_bar {
+            /* float: right하면 html 순서 변경됨. 
+            -> 해결방법: 부모에 right, 자식에 ,left 작성 */
+            float: right;
+        }
+        #content>#bar>ul>#por_bar>li {
+            float: left;
+        }
+        #content>#bar>ul>#por_bar>li:first-child {
+            margin-right: 20px;
+        }
+
+        #content>#bar>ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#aboutme">About me</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>Portfolio</h1>
+
+            <div id="bar">
+                <ul>
+                    <div id="home_bar">
+                        <li><a href="#home">HOME</a></li>
+                        <li><span>●</span> Portfolio</li>
+                    </div>
+
+                    <div id="por_bar">
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#github">Github</a></li>
+                    </div>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
