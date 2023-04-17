@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/reset.css">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/font.css">
+    <link rel="stylesheet" href="https://mooozi.github.io/css/lecture.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>혜정이의 홈페이지</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 16px;
+            color: black;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #container {
+            background: url("./images/background_aboutme.jpg") no-repeat;
+            height: 5500px;
+            overflow: hidden;
+        }
+
+        #content {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #nav>ul {
+            display: flex;
+            justify-content: space-around;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 20px 100px 40px 100px;
+        }
+
+        #nav>ul>li {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        #content>h1 {
+            font-size: 50px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 77px;
+            margin-top: 130px;
+            padding-left: 30px;
+        }
+
+        #bar>ul {
+
+            padding: 340px 30px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid rgb(223, 223, 223);
+            display: flex;
+        }
+
+        #bar>ul>li {
+            font-size: 20px;
+            letter-spacing: -1px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            position: relative;
+        }
+
+        #bar>ul>li>span {
+            position: absolute;
+            font-size: 9px;
+            top: 8px;
+            left: -18px;
+        }
+
+        #bar>ul>li:nth-child(2) {
+            margin-left: 40px;
+            color: rgb(223, 223, 223);
+        }
+
+        #bar>ul>li:nth-child(3) {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        #introduce {
+            display: flex;
+            margin: 200px 0px;
+            justify-content: center;
+        }
+
+        #introduce>img {
+            /* width: 530px;
+            height: 360px;
+            margin-right: 50px; */
+
+            width: 340px;
+            height: 390px;
+            margin-right: 120px;
+        }
+
+
+        #introduce>#intro {
+            font-family: 'Noto Sans KR', sans-serif;
+
+        }
+
+        #introduce>#intro>h2 {
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        #per_info {
+            margin-bottom: 60px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        #skill {
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 250px 0px 70px 0px;
+        }
+
+        #skill>h6 {
+            color: rgb(249, 103, 70);
+            font-weight: 400;
+        }
+
+        #skill>h2 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        #skill_items>ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px 10px 100px 0px;
+            justify-content: center;
+        }
+
+        #skill_items>ul>li>img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        #history {
+            display: flex;
+            margin: 180px 0px 300px 0px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #pro_ex {
+            width: 50%;
+        }
+
+        #pro_ex>h2 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        #pro_ex>p {
+            margin-left: 90px;
+        }
+
+        #pro_ex>h2 {
+            margin: 320px 0px 10px 90px;
+        }
+
+        #pro_ex>#port_btn {
+            all: unset;
+            cursor: pointer;
+        }
+
+        #pro_ex>#port_btn>img {
+            width: 300px;
+            margin-top: -90px;
+            padding: 0;
+        }
+
+        #his_hourly {
+            width: 50%;
+            position: relative;
+        }
+
+        #his_hourly>ul>li>p {
+            margin: 11px 65px;
+        }
+
+        #his_hourly>ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #his_hourly>ul>li {
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        #his_hourly>ul>li>.ball {
+            width: 100px;
+            height: 100px;
+            margin-top: -35px;
+            position: absolute;
+
+        }
+
+        #his_hourly>ul>li>#ball1 {
+            left: 100px;
+            top: 10px;
+        }
+
+        #ball2 {
+            left: 100px;
+            top: 244px;
+        }
+
+        #ball3 {
+            left: 100px;
+            top: 479px;
+        }
+
+        #ball4 {
+            left: 100px;
+            top: 713px;
+        }
+
+        #por_Box>#por_name>h3 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        #por_Box>#por_name>h6 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        #por_Box>#por_name>p {
+            margin-bottom: 20px;
+        }
+
+        #his_hourly>ul>li:nth-child(1):before {
+            position: absolute;
+            left: 147.5px;
+            top: 37px;
+            content: "";
+            width: 2px;
+            height: 206px;
+            background-color: rgb(216, 216, 216);
+        }
+
+        #his_hourly>ul>li:nth-child(2):before {
+            position: absolute;
+            left: 147.5px;
+            top: 272px;
+            content: "";
+            width: 2px;
+            height: 206px;
+            background-color: rgb(216, 216, 216);
+        }
+
+        #his_hourly>ul>li:nth-child(3):before {
+            position: absolute;
+            left: 147.5px;
+            top: 506px;
+            content: "";
+            width: 2px;
+            height: 206px;
+            background-color: rgb(216, 216, 216);
+        }
+
+        .subhead {
+            font-size: 50px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 600;
+            margin: 0px 90px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid rgb(223, 223, 223);
+            margin-bottom: 50px;
+        }
+
+        .subhead>span {
+            color: rgb(249, 103, 70);
+        }
+
+        #blogs>ul {
+            margin: 0px 90px 300px 90px;
+            display: flex;
+
+        }
+
+        #blogs>ul>li>div {
+            width: 500px;
+            height: 400px;
+            margin-bottom: 10px;
+            background-color: rgb(232, 215, 208);
+        }
+
+        #blogs>ul>li>div:first-child {
+            margin-right: 30px;
+        }
+        #blogs>ul>li>p,h3{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        #blogs>ul>li>p{
+            text-align: center;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgb(223, 223, 223);
+        }
+        #blogs>ul>li>h3{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        #resume {
+            margin: 0px 150PX;
+        }
+        #resume >div {
+            width: 900px;
+            height: 300px;
+            border: 2px solid rgb(223, 223, 223);
+            box-sizing: border-box;
+            background-color: rgb(232, 215, 208);
+        }
+
+        #footer {
+            height: 35px;
+            text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: black;
+            color: white;
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#aboutme">About me</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>About me</h1>
+
+            <div id="bar">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><span id="circle">●</span> About me</li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#github">Github</a></li>
+                </ul>
+            </div>
+
+            <div id="introduce">
+                <!-- <img src="./images/face2.png" alt="face" id="face"> -->
+                <img src="./images/image5.png" alt="face" id="face">
+
+                <div id="intro">
+                    <h2>안녕하세요!</h2>
+
+                    <p> 끊임없이 도전하고 경험하며 성장하는 박혜정입니다.<br>
+                        끈질기게 배움면서 부족한 부분을 채워가려고<br>
+                        노력하며 성장하고 있습니다!<br>
+                    </p>
+
+                    <p id="per_info">
+                        박혜정<br>
+                        98.03.03<br>
+                        010-7507-6141<br>
+                        nobel2050@naver.com<br>
+                    </p>
+
+                    <h2>자격증</h2>
+                    <p id="certification">
+                        정보처리기사 ,리눅스 마스터 1급/2급<br>
+                        네트워크 관리사 2급, GTQ 1급<br>
+                        캐드2급, 컴활 1급, 워드 1급
+                    </p>
+                </div>
+            </div>
+
+            <div id="skill">
+                <h6>PROFESSIONAL</h6>
+                <h2>보유 기술</h2>
+            </div>
+
+            <div id="skill_items">
+                <ul>
+                    <li><img src="./images/python_logo.png" alt="python_logo"></li>
+                    <li><img src="./images/Java_logo.png" alt="Java_logo"></li>
+                    <li><img src="./images/c_logo.png" alt="c_logo"></li>
+                    <li><img src="./images/mysql_logo.png" alt="mysql_logo"></li>
+                    <li><img src="./images/css_logo.png" alt="css_logo"></li>
+                    <li><img src="./images/HTML5_logo.png" alt="HTML5_logo"></li>
+                    <li><img src="./images/JavaScript_logo.png" alt="JavaScript_logo"></li>
+                    <li><img src="./images/jQuery_logo.png" alt="jQuery_logo"></li>
+                    <li><img src="./images/Linux_logo.png" alt="Linux_logo"></li>
+                    <li><img src="./images/spring_logo.png" alt="spring_logo"></li>
+                    <li><img src="./images/jsp_logo.png" alt="jsp_logo"></li>
+                    <li><img src="./images/visual_studio.png" alt="visual_studio"></li>
+                    <li><img src="./images/visual_studio_code.png" alt="visual_studio_code"></li>
+                    <li><img src="./images/eclips_logo.png" alt="eclips_logo"></li>
+                    <li><img src="./images/codeblock_logo.png" alt="codeblock_logo"></li>
+                    <li><img src="./images/androidstudio_logo.png" alt="androidstudio_logo"></li>
+                    <li><img src="./images/github_logo.png" alt="github_logo"></li>
+                    <li><img src="./images/illustrator_logo.png" alt="illustrator_logo"></li>
+                    <li><img src="./images/엑셀_logo.png" alt="excel_logo"></li>
+                    <li><img src="./images/powerpoint_logo.png" alt="powerpoint_logo"></li>
+                    <li><img src="./images/photoshop_logo.png" alt="photoshop_logo"></li>
+                </ul>
+            </div>
+
+            <div id="history">
+                <div id="pro_ex">
+                    <h2>개발 프로젝트</h2>
+                    <p>경험에 대한 것 작성하기 조금 길게 작성하기!!<br>
+                        하지만 할 말이 생각이 나지 않는다... <br>
+                        이렇게라도 길게 써버리기~! 나중에 꼭 수정하기
+                    </p>
+
+                    <button id="port_btn"><img src="./images/구경_btn.png" alt="port_btn"></button>
+                </div>
+
+                <div id="his_hourly">
+                    <ul>
+                        <li>
+                            <p class="year">2018년</p>
+                            <img src="./images/ball.png" alt="ball" class="ball" id="ball1">
+
+                            <div id="por_Box">
+                                <div id="por_name">
+                                    <h3>인테리아</h3>
+                                    <h6>팀 프로젝트</h6>
+                                    <p>프론트 엔드 & 벡엔드</p>
+
+                                </div>
+
+                                <div id="pro_content">
+                                    <p>
+                                        AR 기술활용, <br>
+                                        휴대폰 카메라를 통한 가상의 공간에 배치할<br>
+                                        수 있도록 하여 직간접적인 도움.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <p class="year">2018년</p>
+                            <img src="./images/ball.png" alt="ball" class="ball" id="ball2">
+
+                            <div id="por_Box">
+                                <div id="por_name">
+                                    <h3>인테리아</h3>
+                                    <h6>팀 프로젝트</h6>
+                                    <p>프론트 엔드 & 벡엔드</p>
+
+                                </div>
+
+                                <div id="pro_content">
+                                    <p>
+                                        AR 기술활용, <br>
+                                        휴대폰 카메라를 통한 가상의 공간에 배치할<br>
+                                        수 있도록 하여 직간접적인 도움.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <p class="year">2018년</p>
+                            <img src="./images/ball.png" alt="ball" class="ball" id="ball3">
+
+                            <div id="por_Box">
+                                <div id="por_name">
+                                    <h3>인테리아</h3>
+                                    <h6>팀 프로젝트</h6>
+                                    <p>프론트 엔드 & 벡엔드</p>
+
+                                </div>
+
+                                <div id="pro_content">
+                                    <p>
+                                        AR 기술활용, <br>
+                                        휴대폰 카메라를 통한 가상의 공간에 배치할<br>
+                                        수 있도록 하여 직간접적인 도움.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <p class="year">2018년</p>
+                            <img src="./images/ball.png" alt="ball" class="ball" id="ball4">
+
+                            <div id="por_Box">
+                                <div id="por_name">
+                                    <h3>인테리아</h3>
+                                    <h6>팀 프로젝트</h6>
+                                    <p>프론트 엔드 & 벡엔드</p>
+
+                                </div>
+
+                                <div id="pro_content">
+                                    <p>
+                                        AR 기술활용, <br>
+                                        휴대폰 카메라를 통한 가상의 공간에 배치할<br>
+                                        수 있도록 하여 직간접적인 도움.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <h2 class="subhead">내 블로그에서 <span>자세히 알아보기</span></h2>
+            <div id="blogs">
+                <ul>
+                    <li>
+                        <div></div>
+                        <p>날짜</p>
+                        <h3>블로그 제목</h3>
+                    </li>
+
+                    <li>
+                        <div></div>
+                        <p>날짜</p>
+                        <h3>블로그 제목</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 class="subhead">나의 <span>이력서</span></h2>
+
+            
+            <div id="resume">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        &copy;박혜정 2023
+    </footer>
+</body>
+
+</html>
