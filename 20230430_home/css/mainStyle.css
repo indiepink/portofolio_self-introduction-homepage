@@ -1,0 +1,147 @@
+html,
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100%;
+}
+
+#container1 {
+    background-color: #f7f0e5;
+    /* height: 100vh; */
+    height: 100%;
+    overflow: hidden;
+}
+
+#content1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#nav>ul {
+    padding: 20px 100px 40px 100px;
+    /* margin-bottom: 50px; */
+}
+
+#nav>ul>li {
+    font-size: 17px;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+#nav>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#container1>#content1>h1,p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+
+p>.emphasis {
+    color: #e7b10a;
+    opacity: 0;
+}
+
+#hourglass {
+    width: 180px;
+    /* margin: -25px auto; */
+    /* margin: 65px auto; */
+    margin: 65px auto 40px auto;
+    transform: rotate(-30deg);
+    /* animation-play-state: paused; */
+}
+
+#hourglass:hover {
+    animation: rotate_image 4s linear infinite;
+    /* animation-play-state: running; */
+}
+
+
+@keyframes rotate_image {
+    from {
+        transform: rotate(330deg);
+    }
+
+    to {
+        transform: rotate(-30deg);
+    }
+}
+
+#container2 {
+    background-color: white;
+    overflow: hidden;
+    padding: 70px 0px;
+}
+
+#content2 {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#article1 {
+    margin-bottom: 50px;
+    /* 스크롤 위치 지정 */
+    transform: translateX(565px);
+}
+
+#article1>img {
+    float: left;
+    width: 300px;
+}
+
+#content2 p {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#content2>#article1>p {
+    padding: 130px 400px 0px 0px;
+}
+
+p .emphasis2 {
+    color: #f96748;
+}
+
+#article1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#article2{
+    transform: translateX(-445px);
+}
+#article2>p {
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 130px;
+}
+
+#article2>#imgBtnChain {
+    float: right;
+}
+
+#article2>#imgBtnChain>a {
+    display: block;
+    margin-left: 130px;
+    margin-top: 15px;
+}
+
+#article2>#imgBtnChain>a>img {
+    width: 298px;
+}
+
+#article2>#imgBtnChain>img {
+    width: 430px;
+}
+
+#article2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
