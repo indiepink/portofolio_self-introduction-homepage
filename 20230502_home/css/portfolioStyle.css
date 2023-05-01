@@ -1,0 +1,280 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100%;
+}
+
+#container {
+    background: url("../images/background_portfolio.jpg") no-repeat;
+    /* height: 2090px; */
+    height: 1800px;
+    overflow: hidden;
+}
+
+#content1 {
+    width: 1200px;
+    /* height: 1800px; */
+    margin: 0 auto;
+}
+
+#nav>ul {
+    padding: 20px 100px 40px 100px;
+    margin-bottom: 130px;
+}
+
+#nav>ul>li {
+    font-size: 17px;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+#nav>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#content1>h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-size: 77px;
+    margin-bottom: 340px;
+}
+#content1>#bar {
+    padding:0px 30px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid rgb(223, 223, 223);
+    font-weight: 500;
+}
+
+#bar>ul {
+    font-size: 20px;
+}
+
+#home_bar {
+    float: left;
+}
+
+#home_bar>li {
+    float: left;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+#home_bar>li>span {
+    position: absolute;
+    font-size: 9px;
+    top: 8px;
+    left: -18px;
+}
+
+#home_bar>li:nth-child(2) {
+    margin-left: 40px;
+    color: rgb(223, 223, 223);
+}
+
+#por_bar {
+    float: right;
+}
+
+#por_bar>li {
+    float: left;
+    letter-spacing: -1px;
+}
+
+#por_bar>li:first-child {
+    margin-right: 20px;
+}
+
+#content1>#bar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#portBox {
+    width: 850px;
+    background-color: rgb(232, 215, 208);
+    margin: 200px auto;
+    position: relative;
+}
+
+.porimg{
+    filter: grayscale(100%);
+    transition: filter 0.6s, transform 0.6s;
+}
+
+.porimg:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+#portBox>ul>li {
+    float: left;
+    padding-left: 25px;
+}
+
+#portBox>ul {
+    padding: 50px 25px 50px 25px;
+}
+
+#portBox>#second_por {
+    padding-top: 0px;
+}
+
+.Fimg {
+    width: 350px;
+    height: 350px;
+}
+
+.Simg {
+    width: 350px;
+    height: 250px;
+}
+
+#portBox>#second_por>li:nth-child(2) {
+    padding-left: 50px;
+    position: absolute;
+    top: 350px;
+    left: 400px;
+}
+
+#portBox>#first_por>li:nth-child(2) {
+    padding-left: 50px;
+}
+
+
+#portBox>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h2 {
+    color: rgb(233, 176, 10);
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    position: absolute;
+    top: 270px;
+    left: 220px;
+}
+
+
+#clicked {
+    all: unset;
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    top: 400px;
+    left: 395px;
+    cursor: pointer;
+}
+
+#clicked:hover{
+    color: rgb(249, 103, 70);
+    font-weight: 900;
+}
+
+#fixed_topBtn {
+    position: fixed;
+    bottom: 0;
+    right: 50PX;
+    margin-bottom: 20px;
+}
+
+#fixed_topBtn>img {
+    width: 50px;
+    height: 50px;
+
+}
+
+#content2 {
+    width: 1200px;
+    height: 2000px;
+    margin: 0 auto;
+}
+
+#explan1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#explan1 > h3 {
+    margin-bottom: 30px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.pro_explan {
+    font-weight: 400;
+}
+
+#apps {
+    margin-bottom: 130px;
+}
+
+#apps>ul {
+    margin-bottom: 80px;
+    position: relative;
+    text-align: center;
+}
+
+#apps>ul>li>img {
+    height: 490px;
+}
+
+#apps>ul>li {
+    width: 280px;
+    display:inline-block;
+}
+
+#apps>ul>li:nth-child(1),#apps>ul>li:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 460px;
+}
+
+
+#explan2 {
+    margin: 0px 0px 50px 90px;
+}
+
+#homepages {
+    margin-left: 90px;
+}
+
+#homepages>ul>li {
+    float: left;
+}
+
+#homepages>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#homepages>ul>li {
+    background-color: rgb(232, 215, 208);
+    width: 70%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+#homepages>ul>li:nth-child(2) {
+    width: 25%;
+    margin-left: 50px;
+}
+#footer {
+    height: 35px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    font-size: 18px;
+}
