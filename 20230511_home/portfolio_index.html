@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolioStyle.css">
+    <link rel="stylesheet" href="./css/reset_font.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/portfolio_Javascript.js"></script>
+    <title>혜정이의 홈페이지</title>
+
+<body>
+    <div id="container">
+        <div id="content1">
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="./aboutme_index.html">About me</a></li>
+                    <li><a href="./portfolio_index.html">Portofolio</a></li>
+                    <li><a href="./contact_index.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>Portfolio</h1>
+
+            <div id="bar">
+                <ul id="home_bar">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><span id="circle">●</span> Contact</li>
+                </ul>
+
+                <ul id="por_bar">
+                    <li><a href="https://blog.naver.com/nobel2050">blog</a></li>
+                    <li><a href="https://github.com/indiepink">Github</a></li>
+                </ul>
+            </div>
+
+            <div id="portBox">
+                <ul id="first_por">
+                    <!-- <li><img src="./images/portfolio1.jpg" alt="portfolio1" class="Fimg porimg firPor"></li>
+                    <li><img src="./images/portfolio2.jpg" alt="portfolio2" class="Simg porimg firPor"></li> -->
+                    <li><img src="./images/portfolio1.jpg" alt="portfolio1" class="Fimg porimg firPor" id="omse"></li>
+                    <li><img src="./images/rock_cloud.jpg" alt="portfolio2" class="Simg porimg firPor"></li>
+                </ul>
+
+                <ul id="second_por">
+                    <!-- <li><img src="./images/port_rock2.jpg" alt="portfolio2" class="Simg porimg secPor"></li>
+                    <li><img src="./images/port_Tamagotchi5.jpg" alt="portfolio1" class="Fimg porimg secPor"></li> -->
+                    <!-- <li><img src="./images/NiKON.png" alt="portfolio2" class="Simg porimg secPor"></li> -->
+                    <li><img src="./images/NIKON_white.png" alt="portfolio2" class="Simg porimg secPor"></li>
+                    <li><img src="./images/port_Tamagotchi5.jpg" alt="portfolio1" class="Fimg porimg secPor"></li>
+                </ul>
+
+                <h2>Portfolio</h3>
+                    <button id="clicked">Click</button>
+            </div>
+
+            <a href="#" id="fixed_topBtn"><img src="./images/top_btn3.png" alt="top_btn"></a>
+            <img src="./images/down.png" alt="down" id="down" class="">
+        </div>
+
+        <div id="content2">
+            <div id="explan1">
+                <h3>인테리아</h3>
+                <p class="pro_explan expaln">
+                    마음에 드는 가구를 찾았지만 자신의 공간과 어울리지 않는 것에<br>
+                    대한 불안감과 구매한 후 공간과 일치하지 않는 불안감 해소하기 위해<br>
+                    AR(Argument Reality) 기술 활용, 휴대폰 카메라를 통한 가상의 공간에<br>
+                    배치할 수 있도록 하여 직간접적인 도움을 주기 위해 만들었습니다.
+                </p>
+
+                <div id="apps">
+                    <ul>
+                        <li id="interia_main"><img src="./images/interia_main.png" alt="interia_app" ></li>
+                        <li><img src="./images/interia_arrang.png" alt="interia_app"></li>
+                        <li id="interia_detail"><img src="./images/interia_detail.png" alt="interia_app" ></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div id="explan2">
+                <div id="rock">
+                    <h3 class="por_name">가위바위보 게임</h3>
+                    <p class="pro_explan expaln">
+                        1명에서부터 최대 4명까지 가위바위보 가능하다.<br>
+                        5초 안에 가위, 바위, 보 중 선택해야 한다. 5초 안에 선택을 안 하면 패배이다.<br>
+                        5초 안에 선택이 되면 중복 검사를 한 후, 서버의 선택을 전송 후 승패를 전송한다.<br>
+                        클라이언트 증가나 감소 시 roomUserNum를 증가, 감소시켜 무, 승, 패 초기화된다.<br>
+                        초기화 전송 후 한 명의 클라이언트만 남을 때까지 진행된다.
+                    </p>
+                </div>
+
+                <div id="grapes">
+                    <h3 class="por_name">습관 만들기</h3>
+                    <p class="pro_explan expaln">
+                        Java와 MySql를 사용하여 습관을 만들어 줄 수 있는 습관 만들기 프로그램을 구현하였다.<br>
+                        처음에 제목과 목표 칸 수(30, 66), 자체 휴일을 입력한다.<br>
+                        목표 칸수가 포도알은 5일의 한 번 입력이 가능한데, 30일인  최대 6번의 보상을<br>
+                        보상 창에 자신의 보상을 입력할 수 있고, 66일인 포도알은 최대 11번 보상 창에 입력이 가능하다.<br>
+                        습관을 지킨 날의 포도알을 클릭하면 포도알의 색이 채워진다.<br>
+                        포도알 5개가 채워지면 그냥 색칠한 포도알이 아닌 할아버지 이미지가 나타나고, 나무에 포도 한 개가 열린다.<br>
+                        포도알 다 채우게 되면 나무에 열린 포도(최대 5개)가 믹서기에 갈리는 이미지가 나오면서 포도 주스가 생성되고<br>
+                        성공 도장과 포도 주스가 나온 후 그 위에 % 가 나오게 되는데,<br> 
+                        포도 주스에 적힌 글자인 %는 자신의 습관 지키는 횟수에 따라 달라진다. 
+                    </p>
+                </div>
+
+                <div id="tamagotchi">
+                    <h3 class="por_name">Tamagotchi 게임</h3>
+                    <p class="pro_explan expaln">
+                        Java를 사용하여 애완동물을 키워내는 게임인 다마고치를 모티브로<br>
+                        시간의 흐름에 따라 이미지가 변화하는 Tamagotchi를 구현하였다.<br>
+                        게임이 시작되면 게임을 새로하기와 이어하기가 있다.<br>
+                        이어하기는 FileInputStream을 사용하여 data.txt 파일에서 데이터를 불러와 게임은 진행한다.<br>
+                        처음에는 알 모양의 캐릭터로 경험치가 10이 되면 캐릭터가 3단계로 커진다.<br>
+                        게임 시간의 하루는 10초이고, 밥을 3번 먹으면 경험치가 하나씩 증가한다.<br>
+                        3일의 한 번은 체력이 감소하고, 취침하면 경험치가 1씩 증가하고, <br>
+                        더러운 상태가 되면 체력이 1씩 감소한다. 씻게 되며 경험치가 1씩 증가한다. <br>
+                        체력이 0이 되면 다마고치는 사망하게 된다. 저장을 누르면 fileName 파일에 데이터가 저장된다.
+                    </p>
+                </div>
+
+                <div id="slider">
+                    <ul id="slides">
+                        <!-- <li><img src="./images/portfolio1.jpg" alt="portfolio1"></li> -->
+                        <li>
+                            <img src="./images/rock_sissor_paper.png" alt="rock_sissor_paper" id="rock_img">
+                        </li>
+                        <li>
+                            <img src="./images/make_a_habit.png" alt="make_a_habit" id="grapes_img">
+                        </li>
+                        <li>
+                            <img src="./images/tamagotchi.png" alt="tamagotchi" id="tamagotchi_img">
+                        </li>
+                    </ul>
+                    <span id="indicator"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        &copy;박혜정 2023
+    </footer>
+</body>
+
+</html>
