@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+/* body, input, select, textarea, button {
+    font: 1em "Source Sans Pro", "Open Sans", "Titillium Web", Roboto, Verdana, Tahoma, "Segoe UI", Helvetica, "나눔바른고딕", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", -apple-system, system-ui, sans-serif;
+}
+
+pre, code, tt, .monospace {
+    font-family: Consolas, "Courier New", Courier, Monaco, Menlo, "Andale Mono", "Lucida Console", "나눔바른고딕", SimSun, "새굴림", "나눔바른고딕 옛한글", "나눔고딕", "맑은 고딕", monospace;
+}
+
+.larger { font-size: 1.6em; }
+
+/* for <strong> and <b> */
+body.bold strong, body.bold b { font-weight: bold; }
+
+/* for <i> and <em> */
+body.italic i, body.italic em { font-style: italic; }
+
+/* remember to define focus styles! */
+/*
+:focus { outline: 0; }
+*/
+
+/* 형광색 배경색 */
+.fluorescent { background-color: #e4ff75; } */

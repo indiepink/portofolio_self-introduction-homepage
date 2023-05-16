@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset_font.css">
+    <link rel="stylesheet" href="./css/nikonMainStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/mainStyle.js"></script>
+    <title>니콘 안경렌즈 홈페이지 | Nikon Lenswear Korea</title>
+
+    <script>
+        window.addEventListener("load", function () {
+
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html"><img src="./images/nikon-logo.png" alt="nikon_logo" id="nikon_logo"></a></li>
+            <li><a href="./nikon_List.html" class="menus">렌즈 찾기 필터</a></li>
+            <li><a href="#com_introduction" class="menus">기업 소개</a></li>
+            <li><a href="#introduction" class="menus">전문가 조언</a></li>
+            <li><a href="#mySight" class="menus">나의 시력</a></li>
+        </ul>
+    </nav>
+
+    <div id="vdieo">
+        <video src="./images/nikon_video.mp4" id="nikonVideo" muted></video>
+    </div>
+    
+    <div id="container">
+        <div class="content-container">
+            <div id="lens_search">
+                <div id="search_tie">
+                    <div class="scroll_bar" id="scroll_bar1">
+                        <ul>
+                            <li><a href="#search" class="active"><span></span></a>
+                                <div class="active_fo">렌즈 찾기</div>
+                            </li>
+                            <li>
+                                <a href="#spectacle_lens"><span></span></a>
+                                <div>안경렌즈</div>
+                            </li>
+                            <li>
+                                <a href="#sunglasses"><span></span></a>
+                                <div>선글라스</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="search_btn">
+                        <h1>어떤 렌즈를 찾고 있나요?</h1>
+
+                        <ul id="lens_filter1">
+                            <li><button class="no_check_btn first_btn" type="button">안경렌즈</button></li>
+                            <li><button class="no_check_btn first_btn" type="button">선글라스</button></li>
+                        </ul>
+
+                        <ul id="lens_filter2">
+                            <li><button id="back_btn" type="button"><img src="./images/back_btn.png"
+                                        alt="back_btn"></button></li>
+                            <li><button id="second_btn1" class="second_btn" type="button">렌즈종류</button></li>
+                            <li><button id="second_btn2" class="second_btn" type="button">디지털 기기 사용</button></li>
+                            <li><button id="second_btn3" class="second_btn" type="button">요리 및 취미 활동</button></li>
+                            <li><button id="second_btn4" class="second_btn" type="button">야외 활동(운동 및 여행)</button></li>
+                            <li><button id="second_btn5" class="second_btn" type="button">게임</button></li>
+                            <li><button id="second_btn6" class="second_btn" type="button">독서</button></li>
+                        </ul>
+
+                        <ul id="lens_filter3">
+                            <li><button class="reset_btn" type="button">누진다초점렌즈</button></li>
+                            <li><button class="reset_btn" type="button">실내/오피스 렌즈</button></li>
+                            <li><button class="reset_btn" type="button">단초점렌즈</button></li>
+                            <li><button class="reset_btn" type="button">피로 완화 기능성 렌즈</button></li>
+                            <li><button class="reset_btn" type="button">블루 라이트 눈 보호</button></li>
+                            <li><button class="reset_btn" type="button">자외선 눈 보호 렌즈</button></li>
+                            <li><button class="reset_btn" type="button">스타일리시한 렌즈</button></li>
+                            <li><button class="reset_btn" type="button">얇고 가벼운 렌즈</button></li>
+                            <li><button class="reset_btn" type="button">선명하고 투명하고 렌즈</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="explains">
+                <div id="explains_wrap">
+                    <div class="scroll_bar scroll_bar2">
+                        <ul>
+                            <li><a href="#search"><span></span></a>
+                                <div>렌즈 찾기</div>
+                            </li>
+                            <li>
+                                <a href="#spectacle_lens" class="active"><span></span></a>
+                                <div class="active_fo">안경렌즈</div>
+                            </li>
+                            <li>
+                                <a href="#sunglasses"><span></span></a>
+                                <div>선글라스</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="spectacle_lens">
+                        <h1>안경렌즈</h1>
+
+                        <p>
+                            니콘의 사명은 타협하지 않으며<br>
+                            최상의 시력과 더 선명하고<br>
+                            높은 내구성의 안경렌즈를<br>
+                            제공하는 것입니다.
+                        </p>
+                    </div>
+
+                    <div id="performance">
+                        <div id="performance1" class="perform">
+                            <img src="./images/protection_icon.png" alt="protection_icon">
+
+                            <h2>Protection</h2>
+                            <p>강한 내구성 및 최적의 눈 보호</p>
+                        </div>
+
+                        <div id="performance2" class="perform">
+                            <img src="./images/Precision_logo.png" alt="Precision_logo">
+
+                            <h2>Precision</h2>
+                            <p>초정밀하며 선명한 시야</p>
+                        </div>
+
+                        <div id="performance3" class="perform">
+                            <img src="./images/Aesthetics_icon.png" alt="Aesthetics_icon">
+
+                            <h2>Aesthetics</h2>
+                            <p>얇고 투명하며 미용적, 시각적 기능 강화</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="explains2">
+                <div class="scroll_bar scroll_bar2">
+                    <ul>
+                        <li><a href="#search"><span></span></a>
+                            <div>렌즈 찾기</div>
+                        </li>
+                        <li>
+                            <a href="#spectacle_lens"><span></span></a>
+                            <div>안경렌즈</div>
+                        </li>
+                        <li>
+                            <a href="#sunglasses" class="active"><span></span></a>
+                            <div class="active_fo">선글라스</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="sunglasses">
+                    <h1>선글라스</h1>
+
+                    <p>
+                        우수한 눈 보호 및 광학 기술을 통해<br>
+                        최상의 정밀한 시야와 눈부신 태양 속에서도<br>
+                        당신에게 선명한 시야를 제공합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div id="quick-menu">
+                <ul>
+                    <li><a href="#road"><img src="./images/management_icon.png" alt="management_icon"></a>
+                        <p>경영이념</p>
+                    </li>
+                    <li><a href="#road"><img src="./images/history_icon.png" alt="history_icon"></a>
+                        <p>역사</p>
+                    </li>
+                    <li><a href="#road"><img src="./images/load_icon.png" alt="load_icon"></a>
+                        <p>길찾기</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        &copy; 2023 ESSILOR KOREA CO., LTD. All Right Reserved. Nikon spectacle lenses are distributed in Korea by
+        Essilor Korea
+    </footer>
+</body>
+
+</html>

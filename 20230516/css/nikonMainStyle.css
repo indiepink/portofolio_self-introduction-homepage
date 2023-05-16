@@ -1,0 +1,328 @@
+html,
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* height: 100%; */
+}
+
+#container {
+    /* background: url("./images/information_background.png") no-repeat; */
+    height: 8000px;
+    overflow: hidden;
+}
+
+#nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#nav>ul {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 0px;
+}
+
+#nav>ul>li:first-child {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#nav>ul>li {
+    margin-left: 35px;
+    line-height: 3;
+}
+
+.menus {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+#vdieo {
+    margin-top: 150px;
+    /* height: 1010px; */
+    position: fixed;
+    top: 37%;
+    left: 50%;
+    border: 5px solid red;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#nikonVideo {
+    width: 1200px;
+    display: block;
+    /* margin: 0 auto; */
+
+}
+
+
+.content-container {
+    position: relative;
+    margin-top: 5000px; /* 동영상 요소의 높이 값에 맞게 조정 */
+}
+
+/* #vdieo.before-load{
+
+    overflow-y: hidden;
+} */
+button {
+    all: unset;
+    cursor: pointer;
+    font-size: 25px;
+    border: 2px solid #cccccc;
+    border-radius: 30px;
+    padding: 8px 35px;
+    box-sizing: border-box;
+    color: #666666;
+}
+.check_btn {
+    background-color: #ffe600;
+    border: 2.5px solid #ffe600;
+    border-radius: 30px;
+    padding: 8px 35px;
+    box-sizing: border-box;
+}
+
+#back_btn {
+    background-color: #ffe600;
+    border:2.5px solid #ffe600 ;
+    border-radius: 30px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+#back_btn > img {
+    width: 25px;
+}
+
+#search_tie {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 800px;
+}
+
+#scroll_bar1 {
+    margin-top: 200px;
+}
+
+.scroll_bar>ul>li a span {
+    display: block;
+    height: 2px;
+    width: 14px;
+    background: #ebebeb;
+    /* transition: all 0.1s ease-in-out; */
+}
+
+.scroll_bar>ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+
+}
+
+.scroll_bar>ul li>a {
+    min-width: 37px;
+    width: 38px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.scroll_bar>ul>li>div {
+    margin-left: 10px;
+    color: #b4b4b4;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* .active>span {
+    height: 3px;
+    width: 26px;
+    background: #ffe600;
+} */
+
+.scroll_bar>ul li>a.active>span {
+    height: 3px;
+    width: 26px;
+    background: #ffe600;
+}
+
+/* .active_fo {
+    font-size: 18px;
+    color: #ffe600;
+} */
+.scroll_bar>ul li>div.active_fo {
+    font-size: 18px;
+    color: #ffe600;
+}
+
+#search_btn {
+    width: 70%;
+    margin-left: 150px;
+
+}
+
+#search_btn>h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 200px 0 100px;
+}
+
+#lens_filter1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#lens_filter2,#lens_filter3 {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#lens_filter2> li:first-child,
+#lens_filter3> li:first-child {
+    margin-left: 0;
+}
+#lens_filter2> li,
+#lens_filter3> li{
+    margin-top: 13px;
+    margin-left: 8px;
+}
+
+#explains {
+    background-color: #f8f5ef;
+    height: 900px;
+}
+
+#explains2 {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    height: 900px;
+}
+
+#explains_wrap {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.scroll_bar2 {
+    margin-top: 300px;
+}
+
+#performance h2,
+p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#performance h2 {
+    font-size: 30px;
+}
+
+#performance p {
+    font-size: 19px;
+}
+
+#performance1 {
+    margin-top: 150px;
+}
+
+#performance2,
+#performance3 {
+    margin-top: 70px;
+}
+
+.perform {
+    width: 250px;
+    background-color: white;
+    padding: 40px 50px;
+    box-shadow: 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.4);
+
+    margin-left: 200px;
+}
+
+.perform>img {
+    width: 240px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+#spectacle_lens,
+#sunglasses {
+    width: 380px;
+    margin-left: 100px;
+}
+
+#spectacle_lens>h1,
+#sunglasses>h1 {
+    margin-bottom: 40px;
+    font-size: 55px;
+}
+
+#spectacle_lens>p,
+#sunglasses>p {
+    font-size: 21px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#performance {
+    width: 50%;
+}
+
+#quick-menu {
+    background: #ffe600;
+    height: 500px
+}
+
+#quick-menu>ul {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+
+#quick-menu>ul>li {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+}
+
+#quick-menu>ul>li p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#quick-menu>ul>li img {
+    margin: 0 auto;
+    height: 100px;
+}
+
+#quick-menu>ul>li a {
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+#quick-menu>ul>li:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #f3f5f7;
+    height: 60px;
+    font-size: 13px;
+    line-height: 4.2;
+    text-align: center;
+}

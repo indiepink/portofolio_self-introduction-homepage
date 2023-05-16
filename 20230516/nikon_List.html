@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset_font.css">
+    <link rel="stylesheet" href="./css/nikonListStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/ListStyle.js"></script>
+    <title>니콘 안경렌즈 홈페이지 | Nikon Lenswear Korea</title>
+</head>
+
+<body>
+    <div id="container">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html"><img src="./images/nikon-logo.png" alt="nikon_logo" id="nikon_logo"></a></li>
+                <li><a href="./nikon_List.html" class="menus">렌즈 찾기 필터</a></li>
+                <li><a href="./nikon_List.html" class="menus">기업 소개</a></li>
+                <li><a href="./nikon_List.html" class="menus">전문가 조언</a></li>
+                <li><a href="./nikon_List.html" class="menus">나의 시력</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <!-- <nav id="nav">
+                <ul>
+                    <li><a href="#Nikon"><img src="./images/nikon-logo.png" alt="nikon_logo" id="nikon_logo"></a></li>
+                    <li><a href="#find_lens" class="menus">렌즈 찾기 필터</a></li>
+                    <li><a href="#com_introduction" class="menus">기업 소개</a></li>
+                    <li><a href="#introduction" class="menus">전문가 조언</a></li>
+                    <li><a href="#mySight" class="menus">나의 시력</a></li>
+                </ul>
+            </nav> -->
+            <div id="filter">
+                <h1>어떤 종류의<br> 렌즈를 찾고 있나요?</h1>
+
+                <ul id="first_filter">
+                    <li><button id="repeat_btn" type="button"><img src="./images/repeat.png" alt="repeat"
+                                id="repeat"></button></li>
+                    <li><button class="top_btn spectacle_lens" type="button">안경렌즈</button></li>
+                    <li><button class="top_btn sunglasses" type="button">선글라스</button></li>
+                </ul>
+
+                <ul id="second_sunglass_filter">
+                    <li><button class="sun_lens1" type="button">착색 안경렌즈</button></li>
+                    <li><button class="sun_lens2" type="button">변색렌즈</button></li>
+                </ul>
+
+                <ul id="second_filter">
+                    <li><button id="second_btn1" class="lensStyle reset_btn" type="button">렌즈종류</button></li>
+                    <li><button id="second_btn2" class="reset_btn" type="button">디지털 기기 사용</button></li>
+                    <li><button id="second_btn3" class="reset_btn" type="button">요리 및 취미 활동</button></li>
+                    <li><button id="second_btn4" class="reset_btn" type="button">야외 활동(운동 및 여행)</button></li>
+                    <li><button id="second_btn5" class="reset_btn" type="button">게임</button></li>
+                    <li><button id="second_btn6" class="reset_btn" type="button">독서</button></li>
+                </ul> 
+
+                <ul id="third_filter">
+                    <li><button class="reset_btn" type="button">누진다초점렌즈</button></li>
+                    <li><button class="reset_btn" type="button">실내/오피스 렌즈</button></li>
+                    <li><button class="reset_btn" type="button">단초점렌즈</button></li>
+                    <li><button class="reset_btn" type="button">피로 완화 기능성 렌즈</button></li>
+                    <li><button class="reset_btn" type="button">블루 라이트 눈 보호</button></li>
+                    <li><button class="reset_btn" type="button">자외선 눈 보호 렌즈</button></li>
+                    <li><button class="reset_btn" type="button">스타일리시한 렌즈</button></li>
+                    <li><button class="reset_btn" type="button">얇고 가벼운 렌즈</button></li>
+                    <li><button class="reset_btn" type="button">선명하고 투명하고 렌즈</button></li>
+                </ul>
+            </div>
+
+            <div id="search">
+                <div id="search_form">
+                    <img src="./images/ReadingGlasses_logo.png" alt="ReadingGlasses_logo">
+
+                    <input type="text" placeholder="렌즈의 이름을 검색해주세요." autocomplete="off">
+                </div>
+
+                <div id="search_list">
+                    <ul id="data_list">
+                        <li>렌즈 종류 <span id="count"></span>종</li>
+                        <li><button id="popularity">인기순</button></li>
+                        <li><button id="newest">최신순</button></li>
+                    </ul>
+
+                    <ul id="img_list">
+                        <li><a href="./nikon_Information.html"><img src="./images/nikon_light_AS_sq.png"
+                                    alt="nikon_light_AS"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/nikon_light_DAS_sq.png"
+                                    alt="nikon_light_DAS"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/nikon_Transitions_sq.png"
+                                    alt="nikon_Transitions"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/nikon_light_viewfit_sq.png"
+                                    alt="nikon_light_viewfit"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/presio_power_inf.png"
+                                    alt="presio_power_inf"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/presio_wide_inf.png"
+                                    alt="presio_wide_inf"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/PURE_BLUE_UV.png"
+                                    alt="PURE_BLUE_UV"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/seemax_master.png"
+                                    alt="seemax_master"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/seemax_ultimate.png"
+                                    alt="seemax_ultimate"></a></li>
+                        <li><a href="./nikon_Information.html"><img src="./images/home_office_NEO.png"
+                                    alt="home_office_NEO"></a></li>
+                    </ul>
+
+                    <ul id="sunglasses_list">
+                        <li class="sun_lens1_list"><a href="./nikon_Information.html"><img src="./images/sunglass_lens.png" alt="sunglass_lens"></a></li>
+                        <li class="sun_lens2_list"><a href="./nikon_Information.html"><img src="./images/nikon_Transitions_XTRactive.png" alt="nikon_Transitions_XTRactive"></a></li>
+                        <li class="sun_lens2_list"><a href="./nikon_Information.html"><img src="./images/nikon_Transitions_sq.png" alt="nikon_Transitions"></a></li>
+
+                    </ul>
+
+                    <ul id="spectacle-lens_list">
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens1.png" alt="spectacle-lens1"></a></li>
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens2.png" alt="spectacle-lens2"></a></li>
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens3.png" alt="spectacle-lens3"></a></li>
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens4.png" alt="spectacle-lens4"></a></li>
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens5.png" alt="spectacle-lens5"></a></li>
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens6.png" alt="spectacle-lens6"></a></li>
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens7.png" alt="spectacle-lens7.png"></a></li>
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens_8.png" alt="spectacle-lens_8.png"></a></li>
+                        <li class="spectacle-lens"><a href="./nikon_Information.html"><img src="./images/spectacle-lens9.png" alt="spectacle-lens9"></a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        &copy; 2023 ESSILOR KOREA CO., LTD. All Right Reserved. Nikon spectacle lenses are distributed in Korea by
+        Essilor Korea
+    </footer>
+</body>
+
+</html>

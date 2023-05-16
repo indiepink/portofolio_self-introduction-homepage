@@ -1,0 +1,230 @@
+html,
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100%;
+}
+
+#container {
+    background: url("../images/list_background.png") no-repeat;
+    /* height: 2440px; */
+    height: auto;
+    overflow: auto;
+    padding-bottom: 150px;
+}
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav>ul {
+    display: flex;
+    padding: 20px 0px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#nav>ul>li:first-child {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#nav>ul>li {
+    margin-left: 35px;
+    line-height: 3;
+}
+
+.menus {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+#filter>h1 {
+    font-size: 43px;
+    margin-bottom: 70px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    font-size: 17px;
+    border: 2px solid #cccccc;
+    border-radius: 30px;
+    padding: 8px 25px;
+    box-sizing: border-box;
+    color: #666666;
+}
+
+#first_filter,
+#second_filter,
+#second_sunglass_filter,
+#third_filter {
+    display: flex;
+}
+
+#first_filter>li,
+#second_filter>li,
+#second_sunglass_filter>li,
+#third_filter>li {
+    margin-left: 10px;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+#first_filter>li:first-child,
+#second_filter>li:first-child,
+#second_sunglass_filter>li:first-child,
+#third_filter>li:first-child {
+    margin-left: 0px;
+}
+
+#third_filter>li:nth-child(7) {
+    margin-left: 0px;
+}
+
+#first_filter {
+    padding-bottom: 15px;
+}
+
+#second_sunglass_filter,
+#second_filter {
+    border-top: 1.5px dashed #cccccc;
+    padding-bottom: 15px;
+    display: none;
+}
+
+#third_filter {
+    border-top: 1.5px dashed #cccccc;
+    flex-wrap: wrap;
+    display: none;
+}
+
+#repeat {
+    width: 18px;
+}
+
+
+.check_btn {
+    background-color: #ffe600;
+    border: 2.5px solid #ffe600;
+    border-radius: 30px;
+    padding: 8px 25px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+#repeat_btn {
+    background-color: #ffe600;
+    border: 2.5px solid #ffe600;
+    border-radius: 30px;
+    padding: 12px 30px;
+    box-sizing: border-box;
+}
+
+#filter {
+    margin: 200px 0px 150px;
+}
+
+#search>#search_form {
+    display: flex;
+    border-bottom: 2px solid #333;
+    padding-bottom: 16px;
+    margin-bottom: 25px;
+}
+
+#search_form>img {
+    width: 30px;
+}
+
+#search_form>input {
+    border: none;
+    font-size: 20px;
+    margin-left: 8px;
+    outline: none;
+    width: 100%;
+
+}
+
+#data_list {
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#data_list>li:first-child {
+    margin-right: auto;
+}
+
+#popularity {
+    all: unset;
+    color: #cccccc;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#popularity::after {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    content: "";
+    width: 1.3px;
+    height: 17px;
+    background-color: rgb(216, 216, 216);
+}
+
+#newest {
+    all: unset;
+    cursor: pointer;
+}
+#img_list,
+#spectacle-lens_list,
+#sunglasses_list {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#img_list {
+    display: flex;
+}
+#spectacle-lens_list{
+    display: none;
+}
+#sunglasses_list {
+    display: none;
+}
+
+
+#img_list>li>a img,
+#sunglasses_list>li>a img,
+#spectacle-lens_list>li>a img  {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+#img_list>li,
+#sunglasses_list>li,
+#spectacle-lens_list>li {
+    margin-top: 100px;
+}
+
+/* #img_list>li:last-child {
+    margin-top: 100px;
+} */
+
+footer {
+    background-color: #f3f5f7;
+    height: 60px;
+    font-size: 13px;
+    line-height: 4.2;
+    text-align: center;
+}
